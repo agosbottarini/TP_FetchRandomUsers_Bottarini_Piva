@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import React from "react";
 
 const Modal = () => {
   const urlApi = "https://randomuser.me/api/?results=5";
@@ -11,20 +10,10 @@ const Modal = () => {
       .catch((error) => console.log("Hubo un error " + error));
   }, []);
 
-
-
-  /*const openModal = () => {
-    setOpen(true);
-    handleOpen(isOpen);
-}
-
-const closeModal = () => {
-    setOpen(false);
-}
-*/
-
       return (
-        {})
+      {}
+        
+      )
         
 };
 

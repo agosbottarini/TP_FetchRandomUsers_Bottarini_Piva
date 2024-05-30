@@ -14,14 +14,14 @@ const Index = () => {
         }, [])
     
     return(
-            <div style={{width: "100%"}}>
+        <div style={{width: "100%"}}>
             <ul style={{display: "flex", justifyContent: "space-around", alignContent: "center", flexWrap: "wrap"}}> {users.map((user, index) =>         
-                    <Cards
-                    name={user.name.first + " " + user.name.last}
-                    email={user.email}
-                    img={user.picture.large}
-                    key={index}
-                    />
+                <Cards
+                name={user.name.first + " " + user.name.last}
+                email={user.email}
+                img={user.picture.large}
+                key={index}
+                />
             )}
             </ul>
         </div>

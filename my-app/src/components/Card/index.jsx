@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from "../../views/Modals";
 
-const Cards = ({img, name, email, index}) => {
+const Cards = ({img, name, email, index, fullName}) => {
 
   const [isOpen, setOpen] = useState(false);
 
@@ -16,10 +16,9 @@ const Cards = ({img, name, email, index}) => {
           isOpen && 
           (<div className="modal-content">
           <span></span>
-          <h2>{"a"}</h2>
-          <img src={""} alt="User" />
+          
           <p>Email: {/*users.email*/}</p>
-          <p></p>
+          <p>jjjjjjjjjjjjjjjjjjjjjjjjj</p>
         </div>)  
           
         }
