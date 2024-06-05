@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 
 
 const Index = () => {
-        const urlApi = "https://randomuser.me/api/?results=5"
+        const urlApi = "https://randomuser.me/api/?results=8"
         const [users, setUsers] = useState([])
         useEffect(() => {
             fetch(urlApi)
@@ -17,9 +17,7 @@ const Index = () => {
         <div style={{width: "100%"}}>
             <ul style={{display: "flex", justifyContent: "space-around", alignContent: "center", flexWrap: "wrap"}}> {users.map((user, index) =>         
                 <Cards
-                name={user.name.first + " " + user.name.last}
-                email={user.email}
-                img={user.picture.large}
+                user={user}
                 key={index}
                 />
             )}
